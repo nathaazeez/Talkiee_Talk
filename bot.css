@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fcfcfc; 
+   
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 500px;
+    /* background-color: #fff; */
+    background: url("https://wallpapercave.com/wp/wp10422229.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%; /* Adjust the width as needed */
+    height: 90vh;/* Adjust the height as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #e2df10;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.chat-window {
+    height: 60vh;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-message, .bot-message {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.bot-message {
+    justify-content: flex-start;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-message .message {
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.bot-message .message {
+    background-color: #e4e6eb;
+    color: #333;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .chat-window {
+        height: 50vh;
+    }
+
+    .chat-input button {
+        padding: 10px;
+        margin-left: 5px;
+    }
+}
